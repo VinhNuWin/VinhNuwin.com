@@ -1,0 +1,197 @@
+#hero-section {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("./assets/gg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgb(17, 17, 17); */
+}
+
+#hero-section h1 {
+  display: flex;
+  align-items: center;
+}
+
+.hero-1 {
+  margin-top: 7vh;
+  width: 30vw;
+  height: 30vh;
+  line-height: 1;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+
+  /* text-align: center; */
+
+  /* border: 2px solid red; */
+}
+.hero-2 {
+  margin-top: 7vh;
+  position: absolute;
+  /* border: 2px solid red; */
+  height: 50%;
+  width: 50%;
+  right: 0;
+}
+.hero-3 {
+  position: absolute;
+
+  height: 50%;
+  width: 50%;
+  bottom: 0;
+}
+.hero-4 {
+  position: absolute;
+  display: inline-flex;
+  background-color: rgb(17, 17, 17, 0.5);
+  border-radius: 5px;
+  border: 2px solid white;
+  height: 20vh;
+  width: 40vw;
+  text-align: center;
+  align-items: center;
+  margin: 5%;
+  bottom: 0%;
+  right: 0;
+  padding: 5rem;
+}
+
+.hero-4 p {
+  font-size: 24px;
+}
+
+.nav {
+  background-color: rgb(217, 217, 217, 0.2);
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.content {
+  height: 3000px;
+  background-color: rgb(17, 17, 17);
+}
+
+.banner {
+  background-color: rgb(17, 17, 17);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 7vh;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.banner h2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.process-section {
+  height: 100vh;
+  background-color: rgb(17, 17, 17);
+}
+
+.project-section {
+  display: flex;
+  height: 80vh;
+  background-color: rgb(17, 17, 17);
+}
+
+.word-wrapper {
+  white-space: nowrap;
+}
+
+.h1 {
+  background-image: linear-gradient(60deg, blue, #ffb03a);
+  background-clip: text;
+  color: transparent;
+}
+
+.tech-skills-wrapper {
+  background-color: rgb(217, 217, 217, 0.1);
+  height: 700px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.tech-skills-wrapper img {
+  height: 700px;
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  right: 0;
+  opacity: 80%;
+}
+
+.tech-skills-container {
+  background-color: rgb(217, 217, 217, 0.15);
+  border-radius: 10px;
+  width: fit-content;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2.5%;
+}
+.tech-skills-container h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  padding-top: 0%;
+}
+
+.tech-skills-container p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.process-wrapper {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.process-wrapper-container {
+}
+
+.process-wrapper img {
+  border-radius: 15px;
+  display: flex;
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 90%;
+  align-self: center;
+}
