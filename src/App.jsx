@@ -5,6 +5,7 @@ import { Scroll } from "./Scroll";
 import { Process } from "./Process";
 import { WhatWeBuild } from "./WhatWeBuild";
 import { TechSkills } from "./TechSkills";
+import { Stack } from "./Stack";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <TechSkills />
       <Process />
       <WhatWeBuild />
+      <Stack />
     </div>
   );
 }

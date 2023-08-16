@@ -29,7 +29,7 @@ export const Scroll = () => {
         variants={cardVariants}
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         UX DESIGNER
       </motion.h2>

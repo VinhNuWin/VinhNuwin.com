@@ -1,6 +1,6 @@
 export const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
+  offscreen: { opacity: 1, scale: 0 },
+  onscreen: {
     opacity: 1,
     scale: 1,
     transition: {
@@ -26,8 +26,8 @@ export const listVariants = {
       type: "spring",
       bounce: 0,
       duration: 1.5,
-      delayChildren: 0.15,
-      staggerChildren: 0.25,
+      // delayChildren: 1.15,
+      // staggerChildren: 2.25,
     },
   },
   onscreen: {
@@ -38,7 +38,7 @@ export const listVariants = {
       bounce: 0,
       duration: 0.8,
       when: "beforeChildren",
-      delayChildren: 0.1,
+      delayChildren: 0.2,
       staggerChildren: 0.15,
     },
     // close: {
