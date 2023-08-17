@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <Scroll />
       <TechSkills />
-      <Process />
+      {/* <Process /> */}
       <WhatWeBuild />
       <Stack />
     </div>

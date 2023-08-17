@@ -1,5 +1,6 @@
 import { motion, useScroll } from "framer-motion";
 import ai from "../src/assets/icons/ai.svg";
+import { Test } from "./assets/lotties/test";
 import {
   listVariants,
   scaleVariants,
@@ -235,6 +236,7 @@ export const Stack = () => {
         </svg>
         <h2>Vite</h2>
       </motion.div>
+      <Test />
     </motion.div>
   );
 };
