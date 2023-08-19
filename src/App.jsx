@@ -6,6 +6,7 @@ import { Process } from "./Process";
 import { WhatWeBuild } from "./WhatWeBuild";
 import { TechSkills } from "./TechSkills";
 import { Stack } from "./Stack";
+import { Projects } from "./Projects";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Hero />
       <Scroll />
       <TechSkills />
-      {/* <Process /> */}
+      <Projects />
       <WhatWeBuild />
       <Stack />
     </div>
