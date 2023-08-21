@@ -1,32 +1,27 @@
 import { motion, useScroll } from "framer-motion";
 import {
   listVariants,
-  itemVariants,
-  item,
-  scaleVariants,
   scrollVariants,
+  item,
   container,
+  itemVariants,
 } from "./variants/containerVariants";
-import { Nav } from "./Nav";
-import HeroHeader from "./assets/components/text-headings/HeroHeader";
-import HeroSubHeader from "./assets/components/text-headings/HeroSubHeader";
 
 export const TechSkills = () => {
   return (
-    <motion.div
-      className="tech-skills-wrapper"
-      variants={container}
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
-    >
-      <div>
+    <motion.div className="tech-skills-wrapper">
+      <motion.div
+        variants={listVariants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <motion.div
           id="pws"
           className="tech-skills-container"
-          variants={itemVariants}
-          initial="offscreen"
-          animate="onscreen"
+          variants={scrollVariants}
+          // initial="offscreen"
+          // animate="onscreen"
         >
           <motion.h2>Pragmatic Web Solutions</motion.h2>
           <motion.p>
@@ -39,9 +34,9 @@ export const TechSkills = () => {
         <motion.div
           id="uxd"
           className="tech-skills-container"
-          variants={itemVariants}
-          initial="offscreen"
-          whileInView="onscreen"
+          variants={scrollVariants}
+          // initial="offscreen"
+          // whileInView="onscreen"
         >
           <motion.h2>Responsive UX Design</motion.h2>
           <motion.p>
@@ -54,9 +49,9 @@ export const TechSkills = () => {
         <motion.div
           id="wd"
           className="tech-skills-container"
-          variants={itemVariants}
-          initial="offscreen"
-          whileInView="onscreen"
+          variants={scrollVariants}
+          // initial="offscreen"
+          // whileInView="onscreen"
         >
           <motion.h2>Web Development</motion.h2>
           <motion.p>
@@ -66,7 +61,7 @@ export const TechSkills = () => {
             needs.
           </motion.p>
         </motion.div>
-      </div>
+      </motion.div>
       <div>
         <img src="/src/assets/aisolutions.png"></img>
       </div>

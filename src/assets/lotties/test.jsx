@@ -4,8 +4,8 @@ export const Test = () => {
   return (
     <Player
       autoplay
-      src="https://lottie.host/ab275de0-f923-42c9-8d1c-0cd1fb476aa7/QS4oYTii38.json"
-      style={{ height: "100vh", width: "100vw" }}
+      src="https://lottie.host/?file=f2d9f4f7-6378-4435-be02-82355a3e5a44/GpnleLs2cT.json"
+      style={{ height: "100%", width: "100%" }}
     ></Player>
   );
 };

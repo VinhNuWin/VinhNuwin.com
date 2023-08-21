@@ -1,5 +1,13 @@
+import React, { Component, useEffect, useRef } from "react";
+import ImageTrack from "./ProjectImages";
+
 export const Projects = () => {
-  const track = document.getElementById("image-track");
+  const track = useRef(null);
+  //   const track = document.getElementById("image-track");
+
+  //   useEffect(() => {
+  //     console.log(track.current);
+  //   }, [track]);
 
   const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
 
@@ -38,47 +46,38 @@ export const Projects = () => {
     }
   };
 
-  /* -- Had to add extra lines for touch events -- */
+  //   /* -- Had to add extra lines for touch events -- */
 
-  window.onmousedown = (e) => handleOnDown(e);
+  //   window.onmousedown = (e) => handleOnDown(e);
 
-  window.ontouchstart = (e) => handleOnDown(e.touches[0]);
+  //   window.ontouchstart = (e) => handleOnDown(e.touches[0]);
 
-  window.onmouseup = (e) => handleOnUp(e);
+  //   window.onmouseup = (e) => handleOnUp(e);
 
-  window.ontouchend = (e) => handleOnUp(e.touches[0]);
+  //   window.ontouchend = (e) => handleOnUp(e.touches[0]);
 
-  window.onmousemove = (e) => handleOnMove(e);
+  //   window.onmousemove = (e) => handleOnMove(e);
 
-  window.ontouchmove = (e) => handleOnMove(e.touches[0]);
+  //   window.ontouchmove = (e) => handleOnMove(e.touches[0]);
 
   return (
-    // <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-    //   <img className="image" src="/src/assets/cat.png" draggable="false"></img>
-    //   <img className="image" src="/src/assets/bb.png" draggable="false"></img>
-    //   <img className="image" src="/src/assets/dv.png" draggable="false"></img>
-    //   <img className="image" src="/src/assets/gg.png" draggable="false"></img>
-    //   <img
-    //     className="image"
-    //     src="/src/assets/hawaii.png"
-    //     draggable="false"
-    //   ></img>
-    //   <img
-    //     className="image"
-    //     src="/src/assets/rainbow.png"
-    //     draggable="false"
-    //   ></img>
-    //   <img className="image" src="/src/assets/vn.png" draggable="false"></img>
-    // </div>
-    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" defer>
-      <img class="image" src="/src/assets/cat.png" draggable="false" />
-      <img class="image" src="/src/assets/cat.png" draggable="false" />
-      <img class="image" src="/src/assets/cat.png" draggable="false" />
-      <img class="image" src="/src/assets/cat.png" draggable="false" />
-      <img class="image" src="/src/assets/cat.png" draggable="false" />
-      <img class="image" src="/src/assets/cat.png" draggable="false" />
-      <img class="image" src="/src/assets/cat.png" draggable="false" />
-      <img class="image" src="/src/assets/cat.png" draggable="false" />
+    <div className="project">
+      <ImageTrack />
+      {/* <div
+
+        data-mouse-down-at="0"
+        data-prev-percentage="0"
+        ref={track}
+      >
+        <img className="image" src="/src/assets/cat.png" draggable="false" />
+        <img className="image" src="/src/assets/cat.png" draggable="false" />
+        <img className="image" src="/src/assets/cat.png" draggable="false" />
+        <img className="image" src="/src/assets/cat.png" draggable="false" />
+        <img className="image" src="/src/assets/cat.png" draggable="false" />
+        <img className="image" src="/src/assets/cat.png" draggable="false" />
+        <img className="image" src="/src/assets/cat.png" draggable="false" />
+        <img className="image" src="/src/assets/cat.png" draggable="false" />
+      </div> */}
     </div>
   );
 };

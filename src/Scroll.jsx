@@ -1,4 +1,5 @@
 import { motion, useScroll } from "framer-motion";
+import { Test } from "./assets/lotties/test";
 import {
   listVariants,
   itemVariants,
@@ -8,31 +9,12 @@ import {
 
 export const Scroll = () => {
   return (
-    <motion.div className="banner">
-      <motion.h2
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
-      >
-        UX RESEARCHER
-      </motion.h2>
-      <motion.h2
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
-      >
-        PROMPT ENGINEER
-      </motion.h2>
-      <motion.h2
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        UX DESIGNER
-      </motion.h2>
-    </motion.div>
+    <div className="marquee">
+      <div className="marquee-container">
+        <motion.h2 className="marquee-item">UX RESEARCHER</motion.h2>
+        <h2 className="marquee-item">PROMPT ENGINEER</h2>
+        <h2 className="marquee-item">UX DESIGNER</h2>
+      </div>
+    </div>
   );
 };

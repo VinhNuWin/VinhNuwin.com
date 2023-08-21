@@ -3,7 +3,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url("./assets/gg.png");
+  /* background: url("./assets/gg.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: rgb(17, 17, 17); */
@@ -16,7 +16,7 @@
 
 .hero-1 {
   margin-top: 7vh;
-  width: 30vw;
+  width: 40vw;
   height: 30vh;
   line-height: 1;
   position: absolute;
@@ -45,21 +45,23 @@
 .hero-4 {
   position: absolute;
   display: inline-flex;
-  background-color: rgb(17, 17, 17, 0.5);
-  border-radius: 5px;
+  background-color: rgb(gray);
+  border-radius: 25px;
   border: 2px solid white;
-  height: 20vh;
+  height: 10vh;
   width: 40vw;
   text-align: center;
   align-items: center;
   margin: 5%;
-  bottom: 0%;
+  bottom: 10%;
   right: 0;
   padding: 5rem;
+  opacity: 50%;
 }
 
-.hero-4 p {
+.hero-4 span {
   font-size: 24px;
+  color: white;
 }
 
 .nav {
@@ -84,29 +86,7 @@
 
 .content {
   height: 4000px;
-  background-color: rgb(17, 17, 17);
-}
-
-.banner {
-  background-color: rgb(17, 17, 17);
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  height: 7vh;
-  /* width: 100%; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.banner h2 {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  /* background-color: rgb(17, 17, 17); */
 }
 
 .process-section {
@@ -118,6 +98,7 @@
   display: flex;
   height: 80vh;
   background-color: rgb(17, 17, 17);
+  background-color: white;
 }
 
 .word-wrapper {
@@ -125,13 +106,12 @@
 }
 
 .h1 {
-  background-image: linear-gradient(60deg, blue, #ffb03a);
   background-clip: text;
   color: transparent;
 }
 
 .tech-skills-wrapper {
-  background-color: rgb(217, 217, 217, 0.1);
+  background-color: rgb(17, 17, 17);
   height: 700px;
   padding: 0;
   margin: 0;
@@ -152,26 +132,40 @@
 
 .tech-skills-container {
   background-color: rgb(217, 217, 217, 0.15);
-  border-radius: 10px;
+  color: aliceblue;
+  border-radius: 0px;
   width: fit-content;
   height: 200px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
-  margin-top: 2.5%;
+  margin-top: 1.5rem;
 }
 .tech-skills-container h2 {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
-  padding-top: 0%;
+  /* margin-top: 1.25rem; */
+  padding: 1rem;
+  margin-left: 5rem;
+  align-content: center;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* border: 2px solid red; */
 }
 
 .tech-skills-container p {
   display: flex;
   justify-content: center;
+  font-size: 1vw;
   text-align: center;
-  margin: 1rem;
+  /* padding: 2.5rem; */
+  margin: 2.75rem;
+  overflow: hidden;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* border: 2px solid red; */
 }
 
 .process-wrapper {
@@ -181,9 +175,6 @@
   flex-direction: column;
   justify-content: space-around;
   margin-top: 2%;
-}
-
-.process-wrapper-container {
 }
 
 .process-wrapper img {
@@ -196,17 +187,45 @@
   align-self: center;
 }
 
+.stack-header-h1 {
+  margin-top: 3.25rem;
+  display: grid;
+  text-align: center;
+  height: 2.75rem;
+  width: 100vw;
+  font-size: 3.2vw;
+  line-height: 0.5;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: helvetica, san-serif;
+  font-weight: bold;
+  line-height: 100%;
+  color: #ff00bf;
+
+  background-image: linear-gradient(
+    to right,
+    #6a16e0 0%,
+    #ff00bf 50%,
+    #6a16e0 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .stack-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 150px;
+  grid-row-gap: 50px;
   width: 100vw;
   justify-items: center;
   padding-top: 5%;
-  height: 500px;
+  height: fit-content;
   margin-bottom: 5%;
+  flex-wrap: wrap;
 }
 
 .stack-container {
@@ -218,7 +237,7 @@
 .stack-wrapper svg {
   flex: 0 1 auto;
   width: 150px;
-  height: 100px;
+  height: 75px;
   /* justify-self: center; */
 }
 
@@ -228,13 +247,25 @@
   text-align: center;
   flex-wrap: wrap;
   flex-direction: column;
-  font-size: 1.75rem;
+  font-size: 1.5vw;
+  color: whitesmoke;
+}
+
+.stack-wrapper h1 {
+  width: 150px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.5vw;
+  color: whitesmoke;
 }
 
 .project {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  position: relative;
+  /* background-color: black; */
   margin: 0rem;
   overflow: hidden;
 }

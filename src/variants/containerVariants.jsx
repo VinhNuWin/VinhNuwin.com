@@ -21,7 +21,6 @@ export const item = {
 export const listVariants = {
   offscreen: {
     opacity: 0,
-    y: 10,
     transition: {
       type: "spring",
       bounce: 0,
@@ -32,7 +31,6 @@ export const listVariants = {
   },
   onscreen: {
     opacity: 1,
-    y: 0,
     transition: {
       type: "spring",
       bounce: 0,
@@ -41,10 +39,6 @@ export const listVariants = {
       delayChildren: 0.2,
       staggerChildren: 0.15,
     },
-    // close: {
-    //   opacity: 0,
-    //   x: -20,
-    // },
   },
 };
 
@@ -82,25 +76,25 @@ export const cardVariants = {
 
 export const scrollVariants = {
   offscreen: {
-    x: 300,
+    x: -30,
     opacity: 0,
   },
   onscreen: {
     x: 0,
     opacity: 1,
     transition: {
-      type: "spring",
-      bounce: 0.2,
-      duration: 0.8,
+      // type: "spring",
+      // bounce: 0.1,
+      duration: 1,
     },
   },
 };
 
 export const scaleVariants = {
   offscreen: {
-    scale: -10,
+    scale: 1000,
     opacity: 0,
-    x: -500,
+    x: 0,
     // y: 500,
   },
   onscreen: {
@@ -109,8 +103,8 @@ export const scaleVariants = {
     x: 0,
     // y: 0,
     transition: {
-      type: "spring",
-      bounce: 0.1,
+      // type: "spring",
+      // bounce: 1.1,
       duration: 1.8,
     },
   },
