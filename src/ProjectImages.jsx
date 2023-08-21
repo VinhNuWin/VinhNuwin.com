@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Test } from "./assets/lotties/test";
+import { motion } from "framer-motion";
+import { scrollVariants } from "./variants/containerVariants.jsx";
 
 class ImageTrack extends Component {
   constructor(props) {
@@ -63,15 +65,7 @@ class ImageTrack extends Component {
         },
         { duration: 1200, fill: "forwards" }
       );
-
-      // this.imgRef.current.animate(
-      //   {
-      //     objectPosition: `${100 + nextPercentage}% center`,
-      //   },
-      //   { duration: 1200, fill: "forwards" }
-      // );
     };
-    // };
 
     window.ontouchmove = (e) => handleOnMove(e.touches[0]);
   }
@@ -79,6 +73,9 @@ class ImageTrack extends Component {
   render() {
     return (
       <div>
+        <motion.h3 className="stack-header-h1" variants={scrollVariants}>
+          Works
+        </motion.h3>
         <div
           id="image-track"
           data-mouse-down-at="0"
@@ -93,43 +90,37 @@ class ImageTrack extends Component {
           />
           <img
             className="image"
-            src="/src/assets/cat.png"
+            src="/src/assets/dv.png"
             draggable="false"
             ref={this.setImgRef}
           />
           <img
             className="image"
-            src="/src/assets/cat.png"
+            src="/src/assets/brawlStats.png"
             draggable="false"
             ref={this.setImgRef}
           />
           <img
             className="image"
-            src="/src/assets/cat.png"
+            src="/src/assets/strapple.png"
             draggable="false"
             ref={this.setImgRef}
           />
           <img
             className="image"
-            src="/src/assets/cat.png"
+            src="/src/assets/tactactoe.png"
             draggable="false"
             ref={this.setImgRef}
           />
           <img
             className="image"
-            src="/src/assets/cat.png"
+            src="/src/assets/hawaii-nail-and-spa.png"
             draggable="false"
             ref={this.setImgRef}
           />
           <img
             className="image"
-            src="/src/assets/cat.png"
-            draggable="false"
-            ref={this.setImgRef}
-          />
-          <img
-            className="image"
-            src="/src/assets/cat.png"
+            src="/src/assets/futur.jpg"
             draggable="false"
             ref={this.setImgRef}
           />

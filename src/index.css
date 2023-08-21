@@ -113,18 +113,25 @@ span {
 }
 
 span:first-of-type {
-  animation: showup 7s;
+  animation: showup 7s linear infinite;
 }
 
 span:last-of-type {
-  /* margin-left: 1rem; */
-  width: 0px;
-  animation: reveal 7s;
+  margin-left: 1rem;
+  width: 200px;
+  animation: reveal 7s linear infinite;
 }
 
 span:last-of-type span {
   margin-left: -255px;
-  animation: slidein 7s;
+  animation: slidein 7s linear infinite;
+}
+
+h3 {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: showup 7s linear infinite;
 }
 
 @keyframes showup {

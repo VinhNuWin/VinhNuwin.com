@@ -10,11 +10,8 @@ export default function HeroHeader() {
         <span>Hi,</span>
         <span>my name's Vinh Nuwin</span>
       </div>
-      <div id="title" className="hero-4">
-        <span>
-          a Latin professor at Hampden-Sydney College in Virginia, comes from a
-          line in section 1.10.32.
-        </span>
+      <div className="hero-4 ">
+        <h3>Software Engineer</h3>
       </div>
     </div>
   );
