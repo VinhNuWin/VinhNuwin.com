@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { Test } from "./assets/lotties/test";
 import { motion } from "framer-motion";
 import { scrollVariants } from "./variants/containerVariants.jsx";
@@ -19,9 +19,16 @@ class ImageTrack extends Component {
   }
 
   componentDidMount() {
+    // useEffect(() => {
+    //   if (this.cbRef.current) {
+    //     console.log("element is loaded:", this.cbRef.current);
+    //   }
+    // }, []);
+
     window.onmousedown = (e) => {
       this.cbRef.dataset.mouseDownAt = e.clientX;
-      console.log(this.cbRef);
+      console.log(this.cbRef.dataset);
+      console.log(this.imgRef);
     };
 
     window.ontouchstart = (e) => e.touches[0];
@@ -58,8 +65,7 @@ class ImageTrack extends Component {
         { duration: 1200, fill: "forwards" }
       );
 
-      // for (const image of this.cbRef.img.class) {
-      this.imgRef.current.style.animate(
+      this.imgRef.animate(
         {
           objectPosition: `${100 + nextPercentage}% center`,
         },
@@ -83,47 +89,59 @@ class ImageTrack extends Component {
           ref={this.setCbRef}
         >
           <img
+            id="cat"
             className="image"
             src="/src/assets/cat.png"
             draggable="false"
             ref={this.setImgRef}
           />
-          <img
+          {/* <img
+            id="dv"
             className="image"
             src="/src/assets/dv.png"
             draggable="false"
             ref={this.setImgRef}
-          />
-          <img
+          /> */}
+          {/* <img
+            id="cat"
             className="image"
             src="/src/assets/brawlStats.png"
             draggable="false"
-            ref={this.setImgRef}
+            // ref={this.setImgRef}
+            ref={(ref) => (inputRef.current.email = ref)}
           />
           <img
+            id="strapple"
             className="image"
             src="/src/assets/strapple.png"
             draggable="false"
-            ref={this.setImgRef}
+            // ref={this.setImgRef}
+            ref={(ref) => (inputRef.current.email = ref)}
           />
           <img
+            id="tactoe"
             className="image"
             src="/src/assets/tactactoe.png"
             draggable="false"
-            ref={this.setImgRef}
+            // ref={this.setImgRef}
+            ref={(ref) => (inputRef.current.email = ref)}
           />
           <img
+            id="hawaii"
             className="image"
             src="/src/assets/hawaii-nail-and-spa.png"
             draggable="false"
-            ref={this.setImgRef}
+            // ref={this.setImgRef}
+            ref={(ref) => (inputRef.current.email = ref)}
           />
           <img
+            id="weather"
             className="image"
             src="/src/assets/futur.jpg"
             draggable="false"
-            ref={this.setImgRef}
-          />
+            // ref={this.setImgRef}
+            ref={(ref) => (inputRef.current.email = ref)}
+          /> */}
         </div>
       </div>
     );
