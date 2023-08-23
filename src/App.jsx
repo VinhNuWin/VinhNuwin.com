@@ -7,6 +7,7 @@ import { WhatWeBuild } from "./WhatWeBuild";
 import { TechSkills } from "./TechSkills";
 import { Stack } from "./Stack";
 import { Projects } from "./Projects";
+import ImageTrack from "./ProjectImages";
 
 function App() {
   return (

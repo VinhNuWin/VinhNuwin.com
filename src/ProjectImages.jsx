@@ -2,6 +2,13 @@ import React, { Component, useEffect } from "react";
 import { Test } from "./assets/lotties/test";
 import { motion } from "framer-motion";
 import { scrollVariants } from "./variants/containerVariants.jsx";
+import cat from "./assets/cat.png";
+import futur from "./assets/futur.jpg";
+import dv from "./assets/dv.png";
+import tic from "./assets/TicTacToe.png";
+import hawaii from "./assets/hawaii.png";
+import brawl from "./assets/brawlStats.png";
+import stapple from "./assets/strapley.png";
 
 class ImageTrack extends Component {
   constructor(props) {
@@ -12,23 +19,46 @@ class ImageTrack extends Component {
       this.cbRef = element;
     };
 
-    this.imgRef = null;
-    this.setImgRef = (element) => {
-      this.imgRef = element;
+    this.catRef = null;
+    this.setCatRef = (element) => {
+      this.catRef = element;
+    };
+
+    this.dvRef = null;
+    this.setDvRef = (element) => {
+      this.dvRef = element;
+    };
+
+    this.weatherRef = null;
+    this.setWeatherRef = (element) => {
+      this.weatherRef = element;
+    };
+
+    this.hawaiiRef = null;
+    this.setHawaiiRef = (element) => {
+      this.hawaiiRef = element;
+    };
+
+    this.strappleRef = null;
+    this.setStrappleRef = (element) => {
+      this.strappleRef = element;
+    };
+
+    this.brawlRef = null;
+    this.setBrawlRef = (element) => {
+      this.brawlRef = element;
+    };
+
+    this.ticRef = null;
+    this.setTicRef = (element) => {
+      this.ticRef = element;
     };
   }
 
   componentDidMount() {
-    // useEffect(() => {
-    //   if (this.cbRef.current) {
-    //     console.log("element is loaded:", this.cbRef.current);
-    //   }
-    // }, []);
-
     window.onmousedown = (e) => {
       this.cbRef.dataset.mouseDownAt = e.clientX;
       console.log(this.cbRef.dataset);
-      console.log(this.imgRef);
     };
 
     window.ontouchstart = (e) => e.touches[0];
@@ -65,7 +95,43 @@ class ImageTrack extends Component {
         { duration: 1200, fill: "forwards" }
       );
 
-      this.imgRef.animate(
+      this.catRef.animate(
+        {
+          objectPosition: `${100 + nextPercentage}% center`,
+        },
+        { duration: 1200, fill: "forwards" }
+      );
+      this.dvRef.animate(
+        {
+          objectPosition: `${100 + nextPercentage}% center`,
+        },
+        { duration: 1200, fill: "forwards" }
+      );
+      this.ticRef.animate(
+        {
+          objectPosition: `${100 + nextPercentage}% center`,
+        },
+        { duration: 1200, fill: "forwards" }
+      );
+      this.strappleRef.animate(
+        {
+          objectPosition: `${100 + nextPercentage}% center`,
+        },
+        { duration: 1200, fill: "forwards" }
+      );
+      this.brawlRef.animate(
+        {
+          objectPosition: `${100 + nextPercentage}% center`,
+        },
+        { duration: 1200, fill: "forwards" }
+      );
+      this.hawaiiRef.animate(
+        {
+          objectPosition: `${100 + nextPercentage}% center`,
+        },
+        { duration: 1200, fill: "forwards" }
+      );
+      this.weatherRef.animate(
         {
           objectPosition: `${100 + nextPercentage}% center`,
         },
@@ -91,57 +157,45 @@ class ImageTrack extends Component {
           <img
             id="cat"
             className="image"
-            src="/src/assets/cat.png"
+            src={cat}
             draggable="false"
-            ref={this.setImgRef}
+            ref={this.setCatRef}
           />
-          {/* <img
+          <img
             id="dv"
             className="image"
-            src="/src/assets/dv.png"
+            src={dv}
             draggable="false"
-            ref={this.setImgRef}
-          /> */}
-          {/* <img
-            id="cat"
-            className="image"
-            src="/src/assets/brawlStats.png"
-            draggable="false"
-            // ref={this.setImgRef}
-            ref={(ref) => (inputRef.current.email = ref)}
+            ref={this.setDvRef}
           />
           <img
             id="strapple"
             className="image"
             src="/src/assets/strapple.png"
             draggable="false"
-            // ref={this.setImgRef}
-            ref={(ref) => (inputRef.current.email = ref)}
+            ref={this.setStrappleRef}
           />
           <img
             id="tactoe"
             className="image"
             src="/src/assets/tactactoe.png"
             draggable="false"
-            // ref={this.setImgRef}
-            ref={(ref) => (inputRef.current.email = ref)}
+            ref={this.setTicRef}
           />
           <img
             id="hawaii"
             className="image"
-            src="/src/assets/hawaii-nail-and-spa.png"
+            src={hawaii}
             draggable="false"
-            // ref={this.setImgRef}
-            ref={(ref) => (inputRef.current.email = ref)}
+            ref={this.setHawaiiRef}
           />
           <img
             id="weather"
             className="image"
-            src="/src/assets/futur.jpg"
+            src={futur}
             draggable="false"
-            // ref={this.setImgRef}
-            ref={(ref) => (inputRef.current.email = ref)}
-          /> */}
+            ref={this.setWeatherRef}
+          />
         </div>
       </div>
     );
