@@ -32,13 +32,12 @@
   margin-top: 7vh;
   position: absolute;
   /* border: 2px solid red; */
-  height: 50%;
-  width: 50%;
-  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 .hero-3 {
   position: absolute;
-
   height: 50%;
   width: 50%;
   bottom: 0;
@@ -89,10 +88,11 @@
   /* background-color: rgb(17, 17, 17); */
 }
 
-.process-section {
+/* .process-section {
   height: 100vh;
   background-color: rgb(17, 17, 17);
-}
+  border: 2px solid red;
+} */
 
 .project-section {
   display: flex;
@@ -103,6 +103,7 @@
 
 .word-wrapper {
   white-space: nowrap;
+  border: 2px solid red;
 }
 
 .h1 {
@@ -146,7 +147,7 @@
   justify-content: center;
   /* margin-top: 1.25rem; */
   padding: 1rem;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
   align-content: center;
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
@@ -189,6 +190,7 @@
 
 .stack-header-h1 {
   margin-top: 3.25rem;
+  background-color: black;
   display: grid;
   text-align: center;
   height: 2.75rem;
@@ -285,4 +287,16 @@
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
+}
+
+#apple {
+  /* --x-pos: 50px;
+  transition: ease-in; */
+  width: 200px;
+  height: 200px;
+  color: white;
+  border: 2px solid red;
+  /* animation: taadaa 2s;
+  animation-timeline: view(block);
+  animation-range: entry 0 exit-crossing 35; */
 }

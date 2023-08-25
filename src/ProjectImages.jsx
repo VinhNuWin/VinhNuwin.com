@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { scrollVariants } from "./variants/containerVariants.jsx";
 import cat from "./assets/cat.png";
 import futur from "./assets/futur.jpg";
-import dv from "./assets/dv.png";
+import dv from "./assets/dv-pro.png";
 import tic from "./assets/TicTacToe.png";
 import hawaii from "./assets/hawaii.png";
 import brawl from "./assets/brawlStats.png";
@@ -58,7 +58,7 @@ class ImageTrack extends Component {
   componentDidMount() {
     window.onmousedown = (e) => {
       this.cbRef.dataset.mouseDownAt = e.clientX;
-      console.log(this.cbRef.dataset);
+      // console.log(this.cbRef.dataset);
     };
 
     window.ontouchstart = (e) => e.touches[0];
@@ -67,7 +67,6 @@ class ImageTrack extends Component {
       this.cbRef.dataset.mouseDownAt = "0";
       this.cbRef.dataset.prevPercentage = this.cbRef.dataset.percentage;
       this.cbRef.dataset.mouseUpAt = e.clientX;
-      console.log(this.cbRef.dataset.mouseDownAt);
     };
 
     window.ontouchend = (e) => e.touches[0];
@@ -131,12 +130,6 @@ class ImageTrack extends Component {
         },
         { duration: 1200, fill: "forwards" }
       );
-      this.weatherRef.animate(
-        {
-          objectPosition: `${100 + nextPercentage}% center`,
-        },
-        { duration: 1200, fill: "forwards" }
-      );
     };
 
     window.ontouchmove = (e) => handleOnMove(e.touches[0]);
@@ -178,9 +171,16 @@ class ImageTrack extends Component {
           <img
             id="tactoe"
             className="image"
-            src="/src/assets/tactactoe.png"
+            src={tic}
             draggable="false"
             ref={this.setTicRef}
+          />
+          <img
+            id="brawl"
+            className="image"
+            src={brawl}
+            draggable="false"
+            ref={this.setBrawlRef}
           />
           <img
             id="hawaii"
@@ -188,13 +188,6 @@ class ImageTrack extends Component {
             src={hawaii}
             draggable="false"
             ref={this.setHawaiiRef}
-          />
-          <img
-            id="weather"
-            className="image"
-            src={futur}
-            draggable="false"
-            ref={this.setWeatherRef}
           />
         </div>
       </div>

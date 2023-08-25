@@ -199,6 +199,7 @@ h3 {
   width: 1px;
   height: 1px;
   background: transparent;
+  overflow: hidden;
   box-shadow: 785px 1440px #fff, 1656px 752px #fff, 945px 1699px #fff,
     358px 442px #fff, 730px 1639px #fff, 1489px 427px #fff, 1134px 1408px #fff,
     1620px 435px #fff, 758px 1131px #fff, 1930px 176px #fff, 613px 394px #fff,
@@ -381,7 +382,7 @@ h3 {
 #stars:after {
   content: " ";
   position: absolute;
-  top: 2000px;
+  top: 500px;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -568,6 +569,7 @@ h3 {
   width: 2px;
   height: 2px;
   background: transparent;
+  overflow: hidden;
   box-shadow: 1037px 1342px #fff, 18px 261px #fff, 1361px 975px #fff,
     1760px 687px #fff, 846px 1551px #fff, 1070px 740px #fff, 1671px 25px #fff,
     377px 1908px #fff, 1652px 246px #fff, 864px 1187px #fff, 1467px 1942px #fff,
@@ -624,7 +626,7 @@ h3 {
 #stars2:after {
   content: " ";
   position: absolute;
-  top: 2000px;
+  top: 500px;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -684,7 +686,8 @@ h3 {
 #stars3 {
   width: 3px;
   height: 3px;
-  background: transparent;
+  /* background: transparent; */
+  overflow: hidden;
   box-shadow: 402px 1645px #fff, 550px 643px #fff, 634px 725px #fff,
     1715px 1562px #fff, 1981px 1501px #fff, 1605px 878px #fff,
     1690px 1007px #fff, 416px 1068px #fff, 522px 1469px #fff, 1811px 714px #fff,
@@ -716,7 +719,7 @@ h3 {
 #stars3:after {
   content: " ";
   position: absolute;
-  top: 2000px;
+  top: 500px;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -759,7 +762,7 @@ h3 {
 
 .marquee {
   width: 100vw;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
@@ -779,14 +782,14 @@ h3 {
 .marquee .marquee-container {
   display: table-row;
   white-space: nowrap;
-  padding-left: 100%;
+  /* padding-left: 100%; */
   animation: marquee 15s linear infinite;
 }
 
 .marquee-item {
   padding-bottom: 0px;
   width: 100vw;
-  padding-left: 450px;
+  /* padding-left: 450px; */
   display: table-cell;
 }
 
@@ -808,7 +811,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
   padding: 0 1rem;
 }
 

@@ -8,17 +8,19 @@ import { TechSkills } from "./TechSkills";
 import { Stack } from "./Stack";
 import { Projects } from "./Projects";
 import ImageTrack from "./ProjectImages";
+import { Weather } from "./Weather";
+import { Apple } from "./Apple";
 
 function App() {
   return (
     <div className="content">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
       <Hero />
+      <Stack />
+      <Apple />
+      {/* <Weather /> */}
       <Scroll />
       <TechSkills />
-      <Stack />
+
       <Projects />
       {/* <ImageTrack /> */}
       <WhatWeBuild />
