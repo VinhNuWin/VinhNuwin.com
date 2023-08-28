@@ -7,23 +7,31 @@ import { WhatWeBuild } from "./WhatWeBuild";
 import { TechSkills } from "./TechSkills";
 import { Stack } from "./Stack";
 import { Projects } from "./Projects";
-import ImageTrack from "./ProjectImages";
+import ProjectImages from "./ProjectImages";
 import { Weather } from "./Weather";
 import { Apple } from "./Apple";
+import { Test } from "./Test";
+import { SpatialUI } from "./spatialUI";
 
 function App() {
   return (
     <div className="content">
-      <Hero />
-      <Stack />
-      <Apple />
-      {/* <Weather /> */}
-      <Scroll />
-      <TechSkills />
+      <div id="stars" className=""></div>
 
-      <Projects />
-      {/* <ImageTrack /> */}
-      <WhatWeBuild />
+      <Hero />
+      <Apple />
+      <Test />
+      <SpatialUI />
+      <Scroll />
+      {/* <ProjectImages /> */}
+      {/* <Projects /> */}
+      {/* <Stack /> */}
+
+      {/* <Weather /> */}
+      {/* <Scroll /> */}
+      {/* <TechSkills /> */}
+
+      {/* <WhatWeBuild /> */}
     </div>
   );
 }

@@ -25,8 +25,6 @@ export const listVariants = {
       type: "spring",
       bounce: 0,
       duration: 1.5,
-      // delayChildren: 1.15,
-      // staggerChildren: 2.25,
     },
   },
   onscreen: {
@@ -34,10 +32,10 @@ export const listVariants = {
     transition: {
       type: "spring",
       bounce: 0,
-      duration: 0.8,
+      duration: 2.8,
       when: "beforeChildren",
-      delayChildren: 0.2,
-      staggerChildren: 0.15,
+      delayChildren: 0.5,
+      staggerChildren: 1.25,
     },
   },
 };

@@ -11,12 +11,12 @@ import HeroHeader from "./assets/components/text-headings/HeroHeader";
 export const Hero = () => {
   const { scrollYProgress } = useScroll();
 
-  window.addEventListener("scroll", function () {
-    if (this.window.scrollY > 500) {
-      console.log(`You have scrolled ${scrollY} pixels`);
-      console.log(this.window.getElementById("hero-section"));
-    }
-  });
+  // window.addEventListener("scroll", function () {
+  //   if (this.window.scrollY > 500) {
+  //     console.log(`You have scrolled ${scrollY} pixels`);
+  //     console.log(this.window.getElementById("hero-section"));
+  //   }
+  // });
 
   return (
     <motion.div
@@ -26,12 +26,8 @@ export const Hero = () => {
       animate="visible"
       className=""
     >
-      <div id="stars" className=""></div>
-      {/* <div id="stars2"></div> */}
-      <div id="stars3" className=""></div>
-      <Nav />
+      {/* <Nav /> */}
       <motion.div
-        className=""
         id="1"
         variants={scaleVariants}
         initial="offsceen"

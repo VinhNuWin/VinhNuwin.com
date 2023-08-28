@@ -8,9 +8,9 @@ import dv from "./assets/dv-pro.png";
 import tic from "./assets/TicTacToe.png";
 import hawaii from "./assets/hawaii.png";
 import brawl from "./assets/brawlStats.png";
-import stapple from "./assets/strapley.png";
+import strapple from "./assets/strapley.png";
 
-class ImageTrack extends Component {
+class ProjectImages extends Component {
   constructor(props) {
     super(props);
 
@@ -138,9 +138,7 @@ class ImageTrack extends Component {
   render() {
     return (
       <div>
-        <motion.h3 className="stack-header-h1" variants={scrollVariants}>
-          Works
-        </motion.h3>
+        <motion.h3 className="stack-header-h1">Works</motion.h3>
         <div
           id="image-track"
           data-mouse-down-at="0"
@@ -195,4 +193,4 @@ class ImageTrack extends Component {
   }
 }
 
-export default ImageTrack;
+export default ProjectImages;

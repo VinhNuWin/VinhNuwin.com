@@ -10,9 +10,6 @@ export default function HeroHeader() {
         <span>Hi,</span>
         <span>my name's Vinh Nuwin</span>
       </div>
-      <div className="hero-4 ">
-        <h3>Software Engineer</h3>
-      </div>
     </div>
   );
 }

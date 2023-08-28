@@ -11,13 +11,13 @@ import {
 export const Stack = () => {
   return (
     <div>
-      <motion.h3
+      {/* <motion.h3
         id="h3-media"
         className="stack-header-h1"
         variants={scrollVariants}
       >
         Technology Stacks
-      </motion.h3>
+      </motion.h3> */}
       <motion.div
         className="stack-wrapper"
         variants={listVariants}

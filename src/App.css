@@ -1,3 +1,6 @@
+#border {
+  border: 2px solid red;
+}
 #hero-section {
   display: flex;
   position: relative;
@@ -15,27 +18,6 @@
   align-items: center;
 }
 
-.hero-1 {
-  margin-top: 7vh;
-  width: 40vw;
-  height: 30vh;
-  line-height: 1;
-  position: absolute;
-  left: 10%;
-  top: 5%;
-
-  /* text-align: center; */
-
-  /* border: 2px solid red; */
-}
-.hero-2 {
-  margin-top: 7vh;
-  position: absolute;
-  /* border: 2px solid red; */
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
 .hero-3 {
   position: absolute;
   height: 50%;
@@ -63,6 +45,13 @@
   color: white;
 }
 
+.navWrapper {
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  /* z-index: 1000; */
+}
+
 .nav {
   background-color: rgb(217, 217, 217, 0.2);
   height: 7vh;
@@ -71,7 +60,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 
 .nav ul {
@@ -112,47 +101,34 @@
 }
 
 .tech-skills-wrapper {
-  background-color: rgb(17, 17, 17);
-  height: 700px;
+  height: 60vh;
+  direction: column;
+  /* direction: row; */
   padding: 0;
   margin: 0;
-  list-style: none;
-  display: flex;
-}
-
-.tech-skills-wrapper img {
-  height: 700px;
-  object-fit: contain;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  right: 0;
-  opacity: 80%;
+  /* display: flex; */
 }
 
 .tech-skills-container {
   background-color: rgb(217, 217, 217, 0.15);
-  color: aliceblue;
-  border-radius: 0px;
-  width: fit-content;
-  height: 200px;
-  display: flex;
-  /* flex-direction: column; */
+  border-radius: 2rem;
+  width: 30vw;
+  height: 50vh;
+  /* display: flex; */
+  overflow: hidden;
   justify-content: space-between;
-  margin-top: 1.5rem;
+  margin: 1.65rem;
+  float: right;
 }
 .tech-skills-container h2 {
   display: flex;
+  height: 35%;
   justify-content: center;
-  /* margin-top: 1.25rem; */
-  padding: 1rem;
-  /* margin-left: 5rem; */
+  /* padding: 0.2rem; */
   align-content: center;
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* border: 2px solid red; */
 }
 
 .tech-skills-container p {
@@ -160,13 +136,8 @@
   justify-content: center;
   font-size: 1vw;
   text-align: center;
-  /* padding: 2.5rem; */
-  margin: 2.75rem;
-  overflow: hidden;
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* border: 2px solid red; */
+  margin: 1.75rem;
+  color: azure;
 }
 
 .process-wrapper {
@@ -190,6 +161,7 @@
 
 .stack-header-h1 {
   margin-top: 3.25rem;
+  position: relative;
   background-color: black;
   display: grid;
   text-align: center;
@@ -272,6 +244,69 @@
   overflow: hidden;
 }
 
+.marquee {
+  width: 100vw;
+  /* margin: 0 auto; */
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 1px 6px #777;
+  background-color: rgb(17, 17, 17);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 7vh;
+  background: -webkit-linear-gradient(white, #38495a);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 0rem;
+}
+
+.marquee .marquee-container {
+  display: table-row;
+  white-space: nowrap;
+  /* padding-left: 100%; */
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-item {
+  padding-bottom: 0px;
+  width: 100vw;
+  display: table-cell;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.banner {
+  background-color: rgb(17, 17, 17);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 7vh;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 2rem; */
+  padding: 0 1rem;
+}
+
+.banner h2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 #image-track {
   display: flex;
   gap: 4vmin;
@@ -289,14 +324,101 @@
   object-position: 100% center;
 }
 
-#apple {
-  /* --x-pos: 50px;
-  transition: ease-in; */
-  width: 200px;
-  height: 200px;
-  color: white;
-  border: 2px solid red;
-  /* animation: taadaa 2s;
-  animation-timeline: view(block);
-  animation-range: entry 0 exit-crossing 35; */
+.apple-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+}
+
+.apple-container {
+  width: 100%;
+  height: 50vh;
+}
+
+.animateApple {
+  animation-duration: 500ms;
+  animation-name: animate-apple;
+}
+@keyframes animate-apple {
+  0% {
+    opacity: 0;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.sticky {
+  position: fixed;
+  bottom: 30%;
+  font-size: 25px;
+  height: 50vh;
+  width: 100vw;
+  opacity: 0.8;
+}
+
+.animateSticky {
+  animation-duration: 1s;
+  animation-name: animate-sticky;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+@keyframes animate-sticky {
+  0% {
+    opacity: 0;
+    scale: 0.9;
+    /* background-color: rgba(0, 0, 0, 0); */
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    /* background-color: rgba(0, 0, 0, 1); */
+  }
+}
+
+.closingScene {
+  animation-duration: 1s;
+  animation-name: closing-scene;
+  overflow: visible;
+}
+
+@keyframes closing-scene {
+  0% {
+    opacity: 1;
+    scale: 1;
+    overflow: visible;
+  }
+  100% {
+    opacity: 0;
+    scale: 0.95;
+    overflow: visible;
+  }
+}
+
+.spatial-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+}
+
+.spatial-container {
+  position: sticky;
+  height: 80vh;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+}
+
+.spatial-video {
+  position: sticky;
+  height: 80vh;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
 }

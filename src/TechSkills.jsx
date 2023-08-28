@@ -10,6 +10,7 @@ import {
 export const TechSkills = () => {
   return (
     <motion.div className="tech-skills-wrapper">
+      <h2>Spatial Software Engineering</h2>
       <motion.div
         variants={listVariants}
         initial="offscreen"
@@ -20,8 +21,8 @@ export const TechSkills = () => {
           id="pws"
           className="tech-skills-container"
           variants={scrollVariants}
-          // initial="offscreen"
-          // animate="onscreen"
+          initial="offscreen"
+          animate="onscreen"
         >
           <motion.h2>Pragmatic Web Solutions</motion.h2>
           <motion.p>
@@ -34,7 +35,7 @@ export const TechSkills = () => {
         <motion.div
           id="uxd"
           className="tech-skills-container"
-          variants={scrollVariants}
+          // variants={scrollVariants}
           // initial="offscreen"
           // whileInView="onscreen"
         >
@@ -49,7 +50,7 @@ export const TechSkills = () => {
         <motion.div
           id="wd"
           className="tech-skills-container"
-          variants={scrollVariants}
+          // variants={scrollVariants}
           // initial="offscreen"
           // whileInView="onscreen"
         >
@@ -62,9 +63,9 @@ export const TechSkills = () => {
           </motion.p>
         </motion.div>
       </motion.div>
-      <div>
+      {/* <div>
         <img src="/src/assets/aisolutions.png"></img>
-      </div>
+      </div> */}
     </motion.div>
   );
 };
