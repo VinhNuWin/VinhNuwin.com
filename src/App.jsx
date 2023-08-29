@@ -12,6 +12,7 @@ import { Weather } from "./Weather";
 import { Apple } from "./Apple";
 import { Test } from "./Test";
 import { SpatialUI } from "./spatialUI";
+import { Reveal } from "./Reveal";
 
 function App() {
   return (
@@ -23,13 +24,14 @@ function App() {
       <Test />
       <SpatialUI />
       <Scroll />
+      <Reveal>Hi</Reveal>
       {/* <ProjectImages /> */}
       {/* <Projects /> */}
       {/* <Stack /> */}
 
       {/* <Weather /> */}
       {/* <Scroll /> */}
-      {/* <TechSkills /> */}
+      <TechSkills />
 
       {/* <WhatWeBuild /> */}
     </div>
