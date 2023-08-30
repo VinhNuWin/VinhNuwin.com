@@ -422,3 +422,15 @@
   left: 0;
   bottom: 0;
 }
+
+.test {
+  height: 50vh;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.test2 {
+  height: 50vh;
+  width: 100%;
+  border: 2px solid blue;
+}

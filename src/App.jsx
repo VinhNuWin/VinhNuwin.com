@@ -18,21 +18,18 @@ function App() {
   return (
     <div className="content">
       <div id="stars" className=""></div>
-
       <Hero />
-      <Apple />
+      {/* <Apple />
       <Test />
       <SpatialUI />
-      <Scroll />
-      <Reveal>Hi</Reveal>
+      <Scroll /> */}
+      <Reveal />
       {/* <ProjectImages /> */}
       {/* <Projects /> */}
       {/* <Stack /> */}
-
       {/* <Weather /> */}
       {/* <Scroll /> */}
-      <TechSkills />
-
+      {/* <TechSkills /> */}
       {/* <WhatWeBuild /> */}
     </div>
   );
