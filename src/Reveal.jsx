@@ -7,19 +7,21 @@ import {
   useTransform,
 } from "framer-motion";
 import { Scroll } from "./Scroll";
+import ProjectImages from "./ProjectImages";
+import { Video } from "./Video";
 
 export const Reveal = () => {
   const targetRef = useRef(<HTMLDivElement />);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["start end", "end end"],
+    offset: ["start end", "start start"],
   });
 
   const animationOrder = {
     initial: 0,
-    fadeInEnd: 0.15,
-    createBranchEnd: 0.7,
-    endTextFadeInStart: 0.95,
+    fadeInEnd: 0.3,
+    fadeOutStart: 0.7,
+    fadeOutEnd: 0.95,
   };
 
   const opacity = useTransform(
@@ -27,8 +29,8 @@ export const Reveal = () => {
     [
       animationOrder.initial,
       animationOrder.fadeInEnd,
-      animationOrder.createBranchEnd,
-      animationOrder.endTextFadeInStart,
+      animationOrder.fadeOutStart,
+      animationOrder.fadeOutEnd,
     ],
     [0, 1, 1, 0]
   );
@@ -36,25 +38,12 @@ export const Reveal = () => {
 
   return (
     <motion.section id="" ref={targetRef}>
-      <motion.div
-        id=""
-        // style={{ scale, opacity }}
-        // className="test"
-        // variants={{
-        //   hidden: { opacity: 0, y: 75 },
-        //   visible: { opacity: 1, y: 0 },
-        // }}
-        // initial="hidden"
-        // animate="visible"
-        // transition={{ duration: 0.5, delay: 0.25 }}
-      >
-        <motion.h2 className="test" style={{ opacity }}>
-          H-1
-        </motion.h2>
+      <motion.div className="test" style={{ opacity }}>
+        <Scroll ref={targetRef} />
       </motion.div>
-      <motion.h2 className="test2" style={{ opacity }}>
-        H-2
-      </motion.h2>
+      <motion.div>
+        <Video />
+      </motion.div>
     </motion.section>
   );
 };

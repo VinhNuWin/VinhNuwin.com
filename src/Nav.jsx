@@ -7,7 +7,7 @@ export const Nav = () => {
           <li>
             <a href="/about">About</a>
           </li>
-          <li>Skills</li>
+          <li>About me</li>
           <li>Work</li>
           <li>Contact</li>
         </ul>
