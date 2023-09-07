@@ -41,7 +41,7 @@ export const Reveal = () => {
       <motion.div className="test" style={{ opacity }}>
         <Scroll ref={targetRef} />
       </motion.div>
-      <motion.div>
+      <motion.div id="middleEarth" className="spatial-container">
         <Video />
       </motion.div>
     </motion.section>

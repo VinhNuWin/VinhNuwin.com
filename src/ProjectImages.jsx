@@ -137,8 +137,10 @@ class ProjectImages extends Component {
 
   render() {
     return (
-      <div>
-        <motion.h3 className="stack-header-h1">Works</motion.h3>
+      <div className="project">
+        <motion.h3 id="border" className="stack-header-h1">
+          Works
+        </motion.h3>
         <div
           id="image-track"
           data-mouse-down-at="0"

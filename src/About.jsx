@@ -5,8 +5,9 @@ import {
   useAnimation,
   useScroll,
   useTransform,
+  AnimatePresence,
 } from "framer-motion";
-import spatialComputing from "./assets/spatial-computing.png";
+import spatialComputing from "./assets/vr.png";
 
 export const About = () => {
   const targetRef = useRef(<HTMLDivElement />);
@@ -34,7 +35,7 @@ export const About = () => {
       animationOrder.fadeOutStart,
       animationOrder.fadeOutEnd,
     ],
-    [0, 1, 1, 0]
+    [0, 0.5, 1, 0]
   );
   const scale = useTransform(
     scrollYProgress,
@@ -44,20 +45,25 @@ export const About = () => {
       animationOrder.initialImageIn,
       animationOrder.imageOutEnd,
     ],
-    [1.1, 1, 0.9, 0.5]
+    [1.0, 2, 3, 3]
   );
 
   return (
-    <motion.div className="spatial-wrapper" id="border" ref={targetRef}>
-      <motion.h2 className="spatial-item" style={{ opacity }}>
-        About me
-      </motion.h2>
-      <div className="spatial-container">
-        <motion.img
-          src={spatialComputing}
-          style={{ opacity, scale }}
-          layout="size"
-        />
+    <motion.div className="wrapper" ref={targetRef}>
+      <div className="container">
+        <motion.div className="container-bubble">
+          <h2>About</h2>
+        </motion.div>
+        <h2>Me</h2>
+        <div className="">
+          <span>
+            Hello! I'm Sarah and I'm a 4th year Computer Science major at UCSB
+            with an interest in full-stack development. With my creative ideas
+            and eye for design, I enjoy creating applications that are both
+            visually appealing and user-friendly. Currently, the technologies
+            I'm working with are Javascript, React, and Node.js!
+          </span>
+        </div>
       </div>
     </motion.div>
   );

@@ -24,16 +24,26 @@ export const Hero = () => {
       variants={listVariants}
       initial="hidden"
       animate="visible"
-      className=""
+      className="wrapper"
     >
       {/* <Nav /> */}
       <motion.div
-        id="1"
-        variants={scaleVariants}
-        initial="offsceen"
-        animate="onscreen"
+        // id="1"
+        // variants={scaleVariants}
+        // initial="offsceen"
+        // animate="onscreen"
+        className="container"
       >
-        <HeroHeader />
+        <div className="container-bubble">
+          <h4 className="">Hello! I'm</h4>
+        </div>
+        <div className="container-h1">
+          <h1>Vinh Nuwin,</h1>
+        </div>
+        <div className="container-h2">
+          <h3>a full-stack developer</h3>
+        </div>
+        {/* <HeroHeader /> */}
       </motion.div>
     </motion.div>
   );
