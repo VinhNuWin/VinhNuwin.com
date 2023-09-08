@@ -5,6 +5,10 @@ import { About } from "./About";
 import ProjectImages from "./ProjectImages";
 import { MiddleEarth } from "./MiddleEarth";
 import { UI } from "./UI";
+import { Technologies } from "./Technologies";
+import { CodeWithMe } from "./CodeWithMe";
+import { Contact } from "./Contact";
+import { Stack } from "./Stack";
 
 // import { ProjectImages } from "./ProjectImages";
 
@@ -14,12 +18,10 @@ function App() {
       <div id="stars" className=""></div>
       <Hero />
       <About />
-      {/* <MiddleEarth /> */}
-      {/* <UI /> */}
-      {/* <ProjectImages /> */}
-      {/* <Test /> */}
-      {/* <SpatialUI /> */}
-      {/* <Scroll /> */}
+      <ProjectImages />
+      <Technologies />
+      <CodeWithMe />
+      <Contact />
     </div>
   );
 }

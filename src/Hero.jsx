@@ -27,15 +27,9 @@ export const Hero = () => {
       className="wrapper"
     >
       {/* <Nav /> */}
-      <motion.div
-        // id="1"
-        // variants={scaleVariants}
-        // initial="offsceen"
-        // animate="onscreen"
-        className="container"
-      >
-        <div className="container-bubble">
-          <h4 className="">Hello! I'm</h4>
+      <motion.div className="">
+        <div id="bubble">
+          <h4>Hello! I'm</h4>
         </div>
         <div className="container-h1">
           <h1>Vinh Nuwin,</h1>

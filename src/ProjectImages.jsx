@@ -137,58 +137,64 @@ class ProjectImages extends Component {
 
   render() {
     return (
-      <div className="project">
-        <motion.h3 id="border" className="stack-header-h1">
-          Works
-        </motion.h3>
-        <div
-          id="image-track"
-          data-mouse-down-at="0"
-          data-prev-percentage="0"
-          ref={this.setCbRef}
-        >
-          <img
-            id="cat"
-            className="image"
-            src={cat}
-            draggable="false"
-            ref={this.setCatRef}
-          />
-          <img
-            id="dv"
-            className="image"
-            src={dv}
-            draggable="false"
-            ref={this.setDvRef}
-          />
-          <img
-            id="strapple"
-            className="image"
-            src="/src/assets/strapple.png"
-            draggable="false"
-            ref={this.setStrappleRef}
-          />
-          <img
-            id="tactoe"
-            className="image"
-            src={tic}
-            draggable="false"
-            ref={this.setTicRef}
-          />
-          <img
-            id="brawl"
-            className="image"
-            src={brawl}
-            draggable="false"
-            ref={this.setBrawlRef}
-          />
-          <img
-            id="hawaii"
-            className="image"
-            src={hawaii}
-            draggable="false"
-            ref={this.setHawaiiRef}
-          />
+      <div>
+        <div className="header">
+          <motion.div id="bubble">
+            <h2>Projects</h2>
+          </motion.div>
+        </div>
+        <div className="wrapper">
+          <div className="project">
+            <div
+              id="image-track"
+              data-mouse-down-at="0"
+              data-prev-percentage="0"
+              ref={this.setCbRef}
+            >
+              <img
+                id="cat"
+                className="image"
+                src={cat}
+                draggable="false"
+                ref={this.setCatRef}
+              />
+              <img
+                id="dv"
+                className="image"
+                src={dv}
+                draggable="false"
+                ref={this.setDvRef}
+              />
+              <img
+                id="strapple"
+                className="image"
+                src="/src/assets/strapple.png"
+                draggable="false"
+                ref={this.setStrappleRef}
+              />
+              <img
+                id="tactoe"
+                className="image"
+                src={tic}
+                draggable="false"
+                ref={this.setTicRef}
+              />
+              <img
+                id="brawl"
+                className="image"
+                src={brawl}
+                draggable="false"
+                ref={this.setBrawlRef}
+              />
+              <img
+                id="hawaii"
+                className="image"
+                src={hawaii}
+                draggable="false"
+                ref={this.setHawaiiRef}
+              />
+            </div>
+          </div>
         </div>
       </div>
     );
