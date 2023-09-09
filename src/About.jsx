@@ -60,14 +60,12 @@ export const About = () => {
       <motion.div className="wrapper" ref={targetRef}>
         <div className="container">
           <span>
-            Hello! I'm Vinh and I'm a 4th year Computer Science major at UCSB
-            with an interest in full-stack development. With my creative ideas
-            and eye for design, I enjoy creating applications that are both
-            visually appealing and user-friendly. Currently, the technologies
-            I'm working with are Javascript, React, and Node.js!
+            Hello! I'm Vinh I enjoy creating applications that are both visually
+            appealing and user-friendly. Currently, the technologies I'm working
+            with are Javascript, React, and Node.js!
           </span>
         </div>
-        <div className="container">
+        <div className="image-container">
           <img src={milo}></img>
         </div>
       </motion.div>
