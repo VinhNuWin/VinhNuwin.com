@@ -144,7 +144,7 @@ class ProjectImages extends Component {
           </motion.div>
         </div>
         <div className="wrapper">
-          <div className="project">
+          <div className="">
             <div
               id="image-track"
               data-mouse-down-at="0"
