@@ -1,5 +1,4 @@
 import React, { Component, useEffect, useRef } from "react";
-import { Test } from "./assets/lotties/test";
 import { motion } from "framer-motion";
 import { scrollVariants } from "./variants/containerVariants.jsx";
 import cat from "./assets/cat.png";
@@ -8,7 +7,7 @@ import dv from "./assets/dv-pro.png";
 import tic from "./assets/TicTacToe.png";
 import hawaii from "./assets/hawaii.png";
 import brawl from "./assets/brawlStats.png";
-import strapple from "./assets/strapley.png";
+import strapple from "./assets/Strapley.png";
 
 class ProjectImages extends Component {
   constructor(props) {
