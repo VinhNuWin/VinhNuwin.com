@@ -8,7 +8,7 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import spatialComputing from "./assets/vr.png";
-import milo from "./assets/milo.jpg";
+import rocco from "./assets/rocco.jpg";
 
 export const About = () => {
   const targetRef = useRef(<HTMLDivElement />);
@@ -63,10 +63,14 @@ export const About = () => {
             Hello! I'm Vinh I enjoy creating applications that are both visually
             appealing and user-friendly. Currently, the technologies I'm working
             with are Javascript, React, and Node.js!
+            <link
+              rel="link"
+              href="https://docs.google.com/document/d/1CdsWg2Onws1ynD_K8Yn4D-1x-EOjxZUlTHttkSuNzpo/edit?usp=sharing"
+            />
           </span>
         </div>
         <div className="image-container">
-          <img src={milo}></img>
+          <img src={rocco}></img>
         </div>
       </motion.div>
     </div>

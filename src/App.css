@@ -44,12 +44,60 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-
-  /* line-height: 180%; */
   width: fit-content;
   height: fit-content;
-  /* padding: 3rem; */
   /* border: 2px solid red; */
+}
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  padding-top: 8%;
+}
+
+.container-contact input {
+  /* 	background: rgba(255, 13, 254, 0.90); */
+  width: 210px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 7px;
+  background: #eee;
+  padding: 1em 2em;
+  outline: none;
+  border: none;
+  /* color: #222; */
+  transition: 0.3s linear;
+}
+::placeholder {
+  color: #999;
+}
+
+.container-contact button {
+  background-image: linear-gradient(
+    to left,
+    rgba(191, 253, 91, 0.75) 0%,
+    rgba(191, 253, 91, 0.86) 100%
+  );
+  font-family: "Abel", sans-serif;
+  padding: 0.5em 1.9em;
+  margin: 2.3em 0 0 0;
+  border-radius: 7px;
+  font-size: 1.4em;
+  cursor: pointer;
+  /* color: #FFFFFF; */
+  font-size: 1em;
+  outline: none;
+  border: none;
+  transition: 0.3s linear;
+}
+.container-contact button:hover {
+  transform: scale(1.02);
+}
+.container-contact button:active {
+  transform: translatey(5px);
 }
 
 .container-wrapper {
@@ -159,26 +207,25 @@ img {
   margin-top: 10%;
 }
 
-
 /*   icons */
 a {
-  color:#fff;
-  background: #DB6E82;
-  border-radius:4px;
-  text-align:center;
-  text-decoration:none;
-  font-family:fontawesome;
+  color: #fff;
+  background: #bffd5b;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-family: fontawesome;
   position: relative;
   display: inline-block;
-  width:40px;
-  height:28px;
-  padding-top:12px;
-  margin:0 2px;
-  -o-transition:all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
-   -webkit-font-smoothing: antialiased;
+  width: 40px;
+  height: 28px;
+  padding-top: 12px;
+  margin: 0 2px;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-font-smoothing: antialiased;
 }
 
 a:hover {
@@ -188,66 +235,43 @@ a:hover {
 /* pop-up text */
 
 a span {
-  color:#666;
-  position:absolute;
-  font-family:sans-serif;
-  bottom:0;
-  left:-25px;
-  right:-25px;
-  padding:5px 7px;
-  z-index:-1;
-  font-size:14px;
-  border-radius:2px;
-  background:#fff;
-  visibility:hidden;
-  opacity:0;
-  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #666;
+  position: absolute;
+  font-family: sans-serif;
+  bottom: 0;
+  left: -25px;
+  right: -25px;
+  padding: 5px 7px;
+  z-index: -1;
+  font-size: 14px;
+  border-radius: 2px;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /* pop-up text arrow */
 
 a span:before {
-  content:'';
-  width: 0; 
-  height: 0; 
+  content: "";
+  width: 0;
+  height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #fff;
-  position:absolute;
-  bottom:-5px;
-  left:40px;
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
 }
 
 /* text pops up when icon is in hover state */
 
 a:hover span {
-  bottom:50px;
-  visibility:visible;
-  opacity:1;
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
 }
-
-/* font awesome icons */
-
-a:nth-of-type(1):before {
-content:'\f09a';
-}
-a:nth-of-type(2):before {
-content:'\f099';
-}
-a:nth-of-type(3):before {
-content:'\f0d5';
-}
-a:nth-of-type(4):before {
-content:'\f113';
-}
-a:nth-of-type(5):before {
-content:'\f17d';
-}
-a:nth-of-type(6):before {
-content:'\f1cb';
-}
-
-/*

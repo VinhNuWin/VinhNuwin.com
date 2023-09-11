@@ -8,6 +8,20 @@ import {
 } from "./variants/containerVariants";
 import js from "./assets/icons/javascript.svg";
 import milo from "./assets/milo.jpg";
+import ts from "./assets/icons/typescript.svg";
+// import aws from "./assets/icons/aws.svg";
+// import azure from "./assets/icons/azure.svg";
+// import blender from "./assets/icons/blender.svg";
+import git from "./assets/icons/github.svg";
+import mongodb from "./assets/icons/database.svg";
+import shopify from "./assets/icons/shopify.svg";
+// import framer from "./assets/icons/framer.svg";
+import node from "./assets/icons/node.svg";
+import chakra from "./assets/icons/chakra.svg";
+import squarespace from "./assets/icons/squarespace.svg";
+import react from "./assets/icons/react.svg";
+import css from "./assets/icons/css3.svg";
+import html from "./assets/icons/html5.svg";
 
 export const Technologies = () => {
   return (
@@ -29,7 +43,7 @@ export const Technologies = () => {
               <h4>JavaScript</h4>
             </div>
             <div id="bubble2">
-              <img className="icon" src={js}></img>
+              <img className="icon" src={ts}></img>
               <h4>TypeScript</h4>
             </div>
             <div id="bubble2">
@@ -37,11 +51,11 @@ export const Technologies = () => {
               <h4>C#</h4>
             </div>
             <div id="bubble2">
-              <img className="icon" src={js}></img>
+              <img className="icon" src={html}></img>
               <h4>HTML</h4>
             </div>
             <div id="bubble2">
-              <img className="icon" src={js}></img>
+              <img className="icon" src={css}></img>
               <h4>CSS</h4>
             </div>
           </div>
@@ -52,20 +66,20 @@ export const Technologies = () => {
             </div>
             <div className="container">
               <div id="bubble2">
-                <img className="icon" src={js}></img>
+                <img className="icon" src={react}></img>
                 <h4>React.js</h4>
               </div>
               <div id="bubble2">
-                <img className="icon" src={js}></img>
+                <img className="icon" src={chakra}></img>
                 <h4>ChakraUI</h4>
               </div>
               <div id="bubble2">
-                <img className="icon" src={js}></img>
+                <img className="icon" src={squarespace}></img>
                 <h4>SquareSpace</h4>
               </div>
             </div>
             <div id="bubble2">
-              <img className="icon" src={js}></img>
+              <img className="icon" src={shopify}></img>
               <h4>Shopify</h4>
             </div>
             <div id="bubble2">
@@ -80,15 +94,15 @@ export const Technologies = () => {
             </div>
             <div className="container">
               <div id="bubble2">
-                <img className="icon" src={js}></img>
+                <img className="icon" src={node}></img>
                 <h4>Node.js</h4>
               </div>
-              <div id="bubble2">
+              {/* <div id="bubble2">
                 <img className="icon" src={js}></img>
                 <h4>Express.js</h4>
-              </div>
+              </div> */}
               <div id="bubble2">
-                <img className="icon" src={js}></img>
+                <img className="icon" src={mongodb}></img>
                 <h4>MongoDB</h4>
               </div>
             </div>
@@ -98,9 +112,13 @@ export const Technologies = () => {
             </div>
             <div className="container-bubble">
               <div id="bubble2">
-                <img className="icon" src={js}></img>
+                <img className="icon" src={git}></img>
                 <h4>Git</h4>
               </div>
+              {/* <div id="bubble2">
+                <img className="icon" src={blender}></img>
+                <h4>Blender</h4>
+              </div> */}
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { Component, useEffect, useRef } from "react";
 import { Test } from "./assets/lotties/test";
 import { motion } from "framer-motion";
 import { scrollVariants } from "./variants/containerVariants.jsx";
@@ -58,7 +58,7 @@ class ProjectImages extends Component {
   componentDidMount() {
     window.onmousedown = (e) => {
       this.cbRef.dataset.mouseDownAt = e.clientX;
-      // console.log(this.cbRef.dataset);
+      console.log(this.cbRef.dataset);
     };
 
     window.ontouchstart = (e) => e.touches[0];
@@ -84,6 +84,9 @@ class ProjectImages extends Component {
           Math.min(nextPercentageUnconstrained, 0),
           -100
         );
+      console.log(percentage);
+
+      console.log(this.cbRef.dataset.prevPercentage);
 
       this.cbRef.dataset.percentage = nextPercentage;
 
@@ -168,7 +171,7 @@ class ProjectImages extends Component {
               <img
                 id="strapple"
                 className="image"
-                src="/src/assets/strapple.png"
+                src={strapple}
                 draggable="false"
                 ref={this.setStrappleRef}
               />
