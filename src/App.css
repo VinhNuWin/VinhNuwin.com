@@ -44,7 +44,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   /* border: 2px solid red; */
 }
@@ -54,8 +54,13 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 20vh;
+  height: fit-content;
   padding-top: 8%;
+  padding-bottom: 5%;
+}
+
+.container-contact iframe {
+  background-color: #fff;
 }
 
 .container-contact input {
@@ -160,9 +165,14 @@
   width: fit-content;
 }
 
+.container a {
+  text-decoration: underline #bffd5b;
+  color: #bffd5b;
+}
+
 img {
   display: flex;
-  width: 100%;
+  width: 80%;
   /* padding: 3rem; */
 }
 
@@ -198,17 +208,19 @@ img {
 .video-wrapper {
   width: 100vw;
   height: 100vh;
+  justify-content: space-around;
   display: flex;
   margin: 0;
 }
 
 .video-container {
-  margin: 5%;
-  margin-top: 10%;
+  display: flex;
+  width: 30vw;
+  padding-top: 10%;
 }
 
 /*   icons */
-a {
+#icon {
   color: #fff;
   background: #bffd5b;
   border-radius: 4px;
@@ -228,13 +240,13 @@ a {
   -webkit-font-smoothing: antialiased;
 }
 
-a:hover {
+#icon:hover {
   background: #ef92a3;
 }
 
 /* pop-up text */
 
-a span {
+#icon span {
   color: #666;
   position: absolute;
   font-family: sans-serif;
@@ -256,7 +268,7 @@ a span {
 
 /* pop-up text arrow */
 
-a span:before {
+#icon span:before {
   content: "";
   width: 0;
   height: 0;
@@ -270,7 +282,7 @@ a span:before {
 
 /* text pops up when icon is in hover state */
 
-a:hover span {
+#icon:hover span {
   bottom: 50px;
   visibility: visible;
   opacity: 1;

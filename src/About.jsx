@@ -11,6 +11,11 @@ import spatialComputing from "./assets/vr.png";
 import rocco from "./assets/rocco.jpg";
 
 export const About = () => {
+  const obj = {
+    text: "here",
+    link: "https://docs.google.com/document/d/1CdsWg2Onws1ynD_K8Yn4D-1x-EOjxZUlTHttkSuNzpo/edit?usp=sharing",
+  };
+
   const targetRef = useRef(<HTMLDivElement />);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -62,11 +67,8 @@ export const About = () => {
           <span>
             Hello! I'm Vinh I enjoy creating applications that are both visually
             appealing and user-friendly. Currently, the technologies I'm working
-            with are Javascript, React, and Node.js!
-            <link
-              rel="link"
-              href="https://docs.google.com/document/d/1CdsWg2Onws1ynD_K8Yn4D-1x-EOjxZUlTHttkSuNzpo/edit?usp=sharing"
-            />
+            with are Javascript, React, and Node.js! You can learn more abuot my
+            professional career <a href={obj.link}>here</a>.
           </span>
         </div>
         <div className="image-container">
