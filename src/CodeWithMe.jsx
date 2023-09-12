@@ -7,7 +7,7 @@ export const CodeWithMe = () => {
         </div>
         <h2 className="header-h2"> With Me</h2>
       </div>
-      <div className="">
+      <div>
         <div className="video-wrapper">
           <iframe
             className="video-container"

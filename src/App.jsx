@@ -8,7 +8,6 @@ import { UI } from "./UI";
 import { Technologies } from "./Technologies";
 import { CodeWithMe } from "./CodeWithMe";
 import { Contact } from "./Contact";
-import { Stack } from "./Stack";
 
 // import { ProjectImages } from "./ProjectImages";
 

@@ -22,10 +22,12 @@ import squarespace from "./assets/icons/squarespace.svg";
 import react from "./assets/icons/react.svg";
 import css from "./assets/icons/css3.svg";
 import html from "./assets/icons/html5.svg";
+import { Stars } from "./Stars";
 
 export const Technologies = () => {
   return (
     <div className="">
+      <Stars />
       <div className="header">
         <motion.div id="bubble">
           <h2>Technologies</h2>

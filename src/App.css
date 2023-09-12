@@ -8,6 +8,10 @@
   /* border: 2px solid red; */
 }
 
+.content {
+  height: fit-content;
+}
+
 .header-h3 {
   display: flex;
   align-items: flex-start;
@@ -121,10 +125,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 45%;
-  float: left;
+  /* float: left; */
   height: fit-content;
+  justify-content: center;
   /* padding: 1rem; */
-  /* border: 2px solid red; */
   /* margin: 3rem; */
   /* margin: 2rem; */
 }
@@ -186,6 +190,10 @@ img {
   width: fit-content;
   align-self: center;
   justify-content: center;
+}
+
+span {
+  font-size: x-large;
 }
 
 #image-track {

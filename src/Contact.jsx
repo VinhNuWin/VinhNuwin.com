@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useRef } from "react";
+import { Stars } from "./Stars";
 
 export const Contact = () => {
   const [email, setEmail] = useState("");
@@ -25,7 +26,8 @@ export const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="content">
+      <Stars />
       <div className="header">
         <div id="bubble">
           <h2>Contact</h2>
