@@ -62,17 +62,19 @@ export const About = () => {
         </motion.div>
         <h2 className="header-h2">Me</h2>
       </div>
-      <motion.div className="wrapper" ref={targetRef}>
+      <motion.div className="" ref={targetRef}>
         <div className="container">
-          <span>
-            Hello! I'm Vinh I enjoy creating applications that are both visually
-            appealing and user-friendly. Currently, the technologies I'm working
-            with are Javascript, React, and Node.js! You can learn more abuot my
-            professional career <a href={obj.link}>here</a>.
-          </span>
-        </div>
-        <div className="image-container">
-          <img src={rocco}></img>
+          <div className="container-item">
+            <span>
+              Hello! I'm Vinh I enjoy creating applications that are both
+              visually appealing and user-friendly. Currently, the technologies
+              I'm working with are Javascript, React, and Node.js! You can learn
+              more abuot my professional career <a href={obj.link}>here</a>.
+            </span>
+          </div>
+          <div className="container-image">
+            <img src={rocco}></img>
+          </div>
         </div>
       </motion.div>
     </div>

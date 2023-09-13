@@ -60,13 +60,6 @@ export const Contact = () => {
               </div>
               <h2 className="header-h2"> a Meeting</h2>
             </div>
-            <iframe
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ08baPR8LU8QmCxrfUfxSlqKzWwspv2lozoIt0aW2QgVofKiwE7CgUtHnR9bcNGxfbJ9jf_-YSW?gv=true"
-              width="80%"
-              height="600"
-              frameborder="0"
-              background="#FFFFFF"
-            ></iframe>
           </div>
         </div>
 

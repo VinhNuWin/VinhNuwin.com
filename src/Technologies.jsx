@@ -34,12 +34,12 @@ export const Technologies = () => {
         </motion.div>
       </div>
 
-      <div className="wrapper">
+      <div className="container">
         <div className="container-wrapper">
           <div className="header-h3">
             <h3>Languages</h3>
           </div>
-          <div className="container">
+          <div className="container-item">
             <div id="bubble2">
               <img className="icon" src={js}></img>
               <h4>JavaScript</h4>
@@ -62,23 +62,21 @@ export const Technologies = () => {
             </div>
           </div>
 
-          <div className="container">
-            <div className="header-h3">
-              <h3>Frontend</h3>
+          <div className="header-h3">
+            <h3>Frontend</h3>
+          </div>
+          <div className="container-item">
+            <div id="bubble2">
+              <img className="icon" src={react}></img>
+              <h4>React.js</h4>
             </div>
-            <div className="container">
-              <div id="bubble2">
-                <img className="icon" src={react}></img>
-                <h4>React.js</h4>
-              </div>
-              <div id="bubble2">
-                <img className="icon" src={chakra}></img>
-                <h4>ChakraUI</h4>
-              </div>
-              <div id="bubble2">
-                <img className="icon" src={squarespace}></img>
-                <h4>SquareSpace</h4>
-              </div>
+            <div id="bubble2">
+              <img className="icon" src={chakra}></img>
+              <h4>ChakraUI</h4>
+            </div>
+            <div id="bubble2">
+              <img className="icon" src={squarespace}></img>
+              <h4>SquareSpace</h4>
             </div>
             <div id="bubble2">
               <img className="icon" src={shopify}></img>
@@ -88,21 +86,15 @@ export const Technologies = () => {
               <img className="icon" src={js}></img>
               <h4>Framer-Motion</h4>
             </div>
-          </div>
 
-          <div className="container">
             <div className="header-h3">
               <h3>Backend</h3>
             </div>
-            <div className="container">
+            <div className="container-item">
               <div id="bubble2">
                 <img className="icon" src={node}></img>
                 <h4>Node.js</h4>
               </div>
-              {/* <div id="bubble2">
-                <img className="icon" src={js}></img>
-                <h4>Express.js</h4>
-              </div> */}
               <div id="bubble2">
                 <img className="icon" src={mongodb}></img>
                 <h4>MongoDB</h4>
@@ -112,20 +104,17 @@ export const Technologies = () => {
             <div className="header-h3">
               <h3>Tools</h3>
             </div>
-            <div className="container-bubble">
+            <div className="container-item">
               <div id="bubble2">
                 <img className="icon" src={git}></img>
                 <h4>Git</h4>
               </div>
-              {/* <div id="bubble2">
-                <img className="icon" src={blender}></img>
-                <h4>Blender</h4>
-              </div> */}
+
+              <div className="container-image">
+                <img src={milo}></img>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="image-container">
-          <img src={milo}></img>
         </div>
       </div>
     </div>
