@@ -55,7 +55,7 @@ export const About = () => {
   );
 
   return (
-    <div>
+    <div className="">
       <div className="header">
         <motion.div id="bubble">
           <h2>About</h2>

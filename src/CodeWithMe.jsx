@@ -1,6 +1,6 @@
 export const CodeWithMe = () => {
   return (
-    <div className="">
+    <div className="container">
       <div className="header">
         <div id="bubble">
           <h2>Code</h2>

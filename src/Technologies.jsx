@@ -35,7 +35,7 @@ export const Technologies = () => {
       </div>
 
       <div className="container">
-        <div className="container-wrapper">
+        <div className="container-item">
           <div className="header-h3">
             <h3>Languages</h3>
           </div>
