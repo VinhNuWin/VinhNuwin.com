@@ -34,12 +34,12 @@ export const Technologies = () => {
         </motion.div>
       </div>
 
-      <div className="container">
-        <div className="container-item">
-          <div className="header-h3">
-            <h3>Languages</h3>
-          </div>
+      <div className="wrapper">
+        <div className="container-technology">
           <div className="container-item">
+            <div className="header-h3">
+              <h3>Languages</h3>
+            </div>
             <div id="bubble2">
               <img className="icon" src={js}></img>
               <h4>JavaScript</h4>
@@ -62,10 +62,11 @@ export const Technologies = () => {
             </div>
           </div>
 
-          <div className="header-h3">
-            <h3>Frontend</h3>
-          </div>
           <div className="container-item">
+            <div className="header-h3">
+              <h3>Frontend</h3>
+            </div>
+
             <div id="bubble2">
               <img className="icon" src={react}></img>
               <h4>React.js</h4>
@@ -86,35 +87,35 @@ export const Technologies = () => {
               <img className="icon" src={js}></img>
               <h4>Framer-Motion</h4>
             </div>
+          </div>
 
+          <div className="container-item">
             <div className="header-h3">
               <h3>Backend</h3>
             </div>
-            <div className="container-item">
-              <div id="bubble2">
-                <img className="icon" src={node}></img>
-                <h4>Node.js</h4>
-              </div>
-              <div id="bubble2">
-                <img className="icon" src={mongodb}></img>
-                <h4>MongoDB</h4>
-              </div>
-            </div>
 
+            <div id="bubble2">
+              <img className="icon" src={node}></img>
+              <h4>Node.js</h4>
+            </div>
+            <div id="bubble2">
+              <img className="icon" src={mongodb}></img>
+              <h4>MongoDB</h4>
+            </div>
+          </div>
+
+          <div className="container-item">
             <div className="header-h3">
               <h3>Tools</h3>
             </div>
-            <div className="container-item">
-              <div id="bubble2">
-                <img className="icon" src={git}></img>
-                <h4>Git</h4>
-              </div>
-
-              <div className="container-image">
-                <img src={milo}></img>
-              </div>
+            <div id="bubble2">
+              <img className="icon" src={git}></img>
+              <h4>Git</h4>
             </div>
           </div>
+        </div>
+        <div className="container-image">
+          <img src={milo}></img>
         </div>
       </div>
     </div>

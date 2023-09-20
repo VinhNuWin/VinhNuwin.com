@@ -62,7 +62,7 @@ export const About = () => {
         </motion.div>
         <h2 className="header-h2">Me</h2>
       </div>
-      <motion.div className="" ref={targetRef}>
+      <motion.div className="wrapper" ref={targetRef}>
         <div className="container">
           <div className="container-item">
             <span>

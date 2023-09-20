@@ -11,13 +11,6 @@ import HeroHeader from "./assets/components/text-headings/HeroHeader";
 export const Hero = () => {
   const { scrollYProgress } = useScroll();
 
-  // window.addEventListener("scroll", function () {
-  //   if (this.window.scrollY > 500) {
-  //     console.log(`You have scrolled ${scrollY} pixels`);
-  //     console.log(this.window.getElementById("hero-section"));
-  //   }
-  // });
-
   return (
     <motion.div
       id="hero-section"
@@ -27,7 +20,7 @@ export const Hero = () => {
       className="wrapper"
     >
       {/* <Nav /> */}
-      <motion.div className="">
+      <motion.div className="hero-container">
         <div id="bubble">
           <h4>Hello! I'm</h4>
         </div>

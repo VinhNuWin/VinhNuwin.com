@@ -16,7 +16,7 @@
 
 section {
   text-align: center;
-  padding: 1.5em 1em;
+  /* padding: 1.5em 1em; */
 }
 
 #uiContainer {
@@ -156,7 +156,6 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   justify-self: center;
-  padding: 20%;
 }
 
 @keyframes showup {
