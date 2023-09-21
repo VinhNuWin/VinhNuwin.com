@@ -1,11 +1,6 @@
 import { motion, useScroll } from "framer-motion";
 import { Test } from "./assets/lotties/test";
-import {
-  listVariants,
-  scrollVariants,
-  container,
-  cardVariants,
-} from "./variants/containerVariants";
+import { list, item } from "./libs/variants";
 import js from "./assets/icons/javascript.svg";
 import milo from "./assets/milo.jpg";
 import ts from "./assets/icons/typescript.svg";
@@ -35,87 +30,92 @@ export const Technologies = () => {
       </div>
 
       <div className="wrapper">
-        <div className="container-technology">
-          <div className="container-item">
-            <div className="header-h3">
-              <h3>Languages</h3>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={js}></img>
-              <h4>JavaScript</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={ts}></img>
-              <h4>TypeScript</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={js}></img>
-              <h4>C#</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={html}></img>
-              <h4>HTML</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={css}></img>
-              <h4>CSS</h4>
-            </div>
-          </div>
+        <div className="container">
+          <motion.div
+            className="container-technology"
+            variants={list}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <motion.div className="container-item" variants={item}>
+              <div className="header-h3">
+                <h3>Languages</h3>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={js}></img>
+                <h4>JavaScript</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={ts}></img>
+                <h4>TypeScript</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={js}></img>
+                <h4>C#</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={html}></img>
+                <h4>HTML</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={css}></img>
+                <h4>CSS</h4>
+              </div>
+            </motion.div>
 
-          <div className="container-item">
-            <div className="header-h3">
-              <h3>Frontend</h3>
-            </div>
+            <motion.div className="container-item" variants={item}>
+              <div className="header-h3">
+                <h3>Frontend</h3>
+              </div>
 
-            <div id="bubble2">
-              <img className="icon" src={react}></img>
-              <h4>React.js</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={chakra}></img>
-              <h4>ChakraUI</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={squarespace}></img>
-              <h4>SquareSpace</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={shopify}></img>
-              <h4>Shopify</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={js}></img>
-              <h4>Framer-Motion</h4>
-            </div>
-          </div>
+              <div id="bubble2">
+                <img className="icon" src={react}></img>
+                <h4>React.js</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={chakra}></img>
+                <h4>ChakraUI</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={squarespace}></img>
+                <h4>SquareSpace</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={shopify}></img>
+                <h4>Shopify</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={js}></img>
+                <h4>Framer-Motion</h4>
+              </div>
+            </motion.div>
 
-          <div className="container-item">
-            <div className="header-h3">
-              <h3>Backend</h3>
-            </div>
+            <motion.div className="container-item" variants={item}>
+              <div className="header-h3">
+                <h3>Backend</h3>
+              </div>
 
-            <div id="bubble2">
-              <img className="icon" src={node}></img>
-              <h4>Node.js</h4>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={mongodb}></img>
-              <h4>MongoDB</h4>
-            </div>
-          </div>
+              <div id="bubble2">
+                <img className="icon" src={node}></img>
+                <h4>Node.js</h4>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={mongodb}></img>
+                <h4>MongoDB</h4>
+              </div>
+            </motion.div>
 
-          <div className="container-item">
-            <div className="header-h3">
-              <h3>Tools</h3>
-            </div>
-            <div id="bubble2">
-              <img className="icon" src={git}></img>
-              <h4>Git</h4>
-            </div>
-          </div>
-        </div>
-        <div className="container-image">
-          <img src={milo}></img>
+            <motion.div className="container-item" variants={item}>
+              <div className="header-h3">
+                <h3>Tools</h3>
+              </div>
+              <div id="bubble2">
+                <img className="icon" src={git}></img>
+                <h4>Git</h4>
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </div>

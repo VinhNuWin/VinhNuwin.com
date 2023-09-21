@@ -1,3 +1,6 @@
+import { list, item } from "./libs/variants";
+import { motion } from "framer-motion";
+
 export const CodeWithMe = () => {
   return (
     <div className="wrapper">
@@ -8,8 +11,15 @@ export const CodeWithMe = () => {
         <h2 className="header-h2"> With Me</h2>
       </div>
       <div>
-        <div className="video-wrapper">
-          <iframe
+        <motion.div
+          className="video-wrapper"
+          variants={list}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <motion.iframe
+            variants={item}
             className="video-container"
             width="560"
             height="315"
@@ -18,8 +28,9 @@ export const CodeWithMe = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-          ></iframe>
-          <iframe
+          ></motion.iframe>
+          <motion.iframe
+            variants={item}
             className="video-container"
             width="560"
             height="315"
@@ -28,8 +39,9 @@ export const CodeWithMe = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-          ></iframe>
-          <iframe
+          ></motion.iframe>
+          <motion.iframe
+            variants={item}
             className="video-container"
             width="560"
             height="315"
@@ -38,8 +50,8 @@ export const CodeWithMe = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-          ></iframe>
-        </div>
+          ></motion.iframe>
+        </motion.div>
       </div>
     </div>
   );

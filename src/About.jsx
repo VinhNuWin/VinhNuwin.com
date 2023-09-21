@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { fadeInAnimationVariants } from "./libs/variants";
 import {
   motion,
   useInView,
@@ -65,14 +66,18 @@ export const About = () => {
       <motion.div className="wrapper" ref={targetRef}>
         <div className="container">
           <div className="container-item">
-            <span>
+            <motion.span
+              variants={fadeInAnimationVariants}
+              hidden="initial"
+              visible="animate"
+            >
               Hello! I'm Vinh I enjoy creating applications that are both
               visually appealing and user-friendly. Currently, the technologies
               I'm working with are Javascript, React, and Node.js! You can learn
               more abuot my professional career <a href={obj.link}>here</a>.
-            </span>
+            </motion.span>
           </div>
-          <div className="container-image">
+          <div className="container-img">
             <img src={rocco}></img>
           </div>
         </div>

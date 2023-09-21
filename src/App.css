@@ -36,8 +36,8 @@
     padding-top: 1rem;
     position: relative;
     align-items: center;
-    overflow: hidden;
-    border: 2px solid blue;
+    overflow: visible;
+    /* border: 2px solid blue; */
   }
   .hero-container {
     width: 50%;
@@ -58,6 +58,7 @@
     flex-flow: row wrap;
     width: 100vw;
     height: fit-content;
+
     /* border: 2px solid red; */
   }
   .container-item {
@@ -66,6 +67,7 @@
     width: 80vw;
     height: 100%;
     align-content: center;
+
     /* margin-top: 1rem; */
     /* border: 2px solid red; */
   }
@@ -76,6 +78,12 @@
     text-align: center;
     height: fit-content;
     /* border: 2px solid red; */
+  }
+  .container-technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
   }
 
   #bubble2 {
@@ -93,14 +101,31 @@
   #bubble2 h4 {
     padding-left: 0.75rem;
   }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .section-6 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80vw;
+    color: #efefef;
+  }
+  .figure img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
   .video-wrapper {
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    height: 80vh;
-    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    align-items: space-around;
     display: flex;
-    /* border: 2px solid red; */
+    margin: 0;
   }
   .video-container {
     display: flex;
@@ -126,9 +151,6 @@
     /* border: 2px solid red; */
   }
   .header h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .header-h3 {
     display: flex;
@@ -140,7 +162,11 @@
     width: 100%;
   }
   .hero-container {
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
     align-self: center;
     /* border: 2px solid red; */
   }
@@ -153,42 +179,49 @@
     padding-top: 1rem;
     position: relative;
     /* align-items: center; */
-    /* overflow: hidden; */
-    border: 2px solid blue;
+    overflow: hidden;
+    /* border: 2px solid blue; */
   }
   .container {
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    margin: auto;
     /* border: 2px solid red; */
   }
   .container-item {
+    width: 50vw;
     display: flex;
     flex-direction: row;
-    flex-flow: row wrap;
-    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+  }
+  .container-item span {
+    display: inline-block;
+    width: 70%;
+    margin: auto;
+  }
+  .container-img {
     width: 50vw;
-    /* float: left; */
-    padding: 5%;
-    border: 2px solid red;
+    height: fit-content;
+  }
+  .container-img img {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
   }
   .container-technology {
     display: flex;
-    position: relative;
     flex-direction: column;
-    width: 10vw;
-    height: 100vh;
-  }
-  .container-image {
-    display: flex;
-    width: 50vw;
-    height: 50vh;
-    align-content: center;
+    align-items: center;
     margin: auto;
-    float: left;
-    padding: 5%;
+    width: 80vw;
+  }
+  .container-technology .container-item {
+    display: flex;
     /* border: 2px solid red; */
+    width: 65%;
+    justify-content: flex-start;
   }
 
   #bubble2 {
@@ -205,7 +238,42 @@
   #bubble2 h4 {
     padding-left: 0.75rem;
   }
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .figure img {
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+  }
+  .video-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    align-items: space-around;
+    display: flex;
+    margin: 0;
+  }
+  .video-container {
+    display: flex;
+    align-self: center;
+    width: 80%;
+    /* padding-top: 10%; */
+    margin: 2rem;
+    /* border: 2px solid red; */
+  }
+  .section-6 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #efefef;
+  }
 }
+
+/*-------------------------*/
 
 .container-contact {
   display: flex;
@@ -292,11 +360,6 @@ img {
   width: 100%;
 }
 
-.icon {
-  width: 2rem;
-  height: 2rem;
-}
-
 .container-h2 {
   display: flex;
   width: fit-content;
@@ -323,16 +386,6 @@ span {
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
-}
-
-.video-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  align-items: space-around;
-  display: flex;
-  margin: 0;
 }
 
 /*   icons */
@@ -407,9 +460,14 @@ span {
 /* Section 6 - Hover Effect 6 */
 
 .row {
+  display: flex;
   max-width: 960px;
   width: 100%;
-  margin: 0 auto;
+  height: 100vh;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .figure * {
@@ -431,10 +489,6 @@ span {
 .figure * {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-}
-.section-6 {
-  /* background: #1d1d1d; */
-  color: #efefef;
 }
 
 .section-6 .figure {

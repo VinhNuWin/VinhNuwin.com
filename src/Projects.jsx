@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import dv from "./assets/dv.png";
 import tic from "./assets/TicTacToe.png";
 import sigma from "./assets/banner.png";
+import { list, item } from "./libs/variants";
 
 export const Projects = () => {
   return (
@@ -11,8 +12,15 @@ export const Projects = () => {
           <h2>Projects</h2>
         </motion.div>
       </div>
-      <div class="row">
-        <figure class="figure">
+      <motion.div
+        class="row"
+        className="iframe-wrapper"
+        variants={list}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        <motion.figure class="figure" variants={item}>
           <img src={dv} />
           <figcaption>
             <h3>Documented Voices</h3>
@@ -23,8 +31,8 @@ export const Projects = () => {
             </p>
           </figcaption>
           <a href="#"></a>
-        </figure>
-        <figure class="figure">
+        </motion.figure>
+        <motion.figure class="figure" variants={item}>
           <img src={tic} />
           <figcaption>
             <h3>Tic Tac Toe</h3>
@@ -36,8 +44,8 @@ export const Projects = () => {
             </p>
           </figcaption>
           <a href="#"></a>
-        </figure>
-        <figure class="figure">
+        </motion.figure>
+        <motion.figure class="figure" variants={item}>
           <img src={sigma} />
           <figcaption>
             <h3>Sigma Creative</h3>
@@ -49,8 +57,8 @@ export const Projects = () => {
             </p>
           </figcaption>
           <a href="#"></a>
-        </figure>
-      </div>
+        </motion.figure>
+      </motion.div>
     </section>
   );
 };
